@@ -41,20 +41,84 @@ class myApp extends StatelessWidget {
                   ),
                 ),
                 ListTile(
-                  title: Text("الصفحه الرئيسيه"),
-                  leading: Icon(Icons.home),
+                  title: Text(
+                    "الصفحه الرئيسيه",
+                    style: TextStyle(
+                        //color: Colors.red,
+                        //backgroundColor: Colors.yellow,
+                        fontSize: 18),
+                  ),
+                  leading: Icon(
+                    Icons.home,
+                    color: Colors.green,
+                    size: 25,
+                  ),
                   onLongPress: () {
                     print("long press");
                   },
                   onTap: () {
                     print("ontap");
                   },
-                  subtitle: Text("اهلا وسهلا بكم"),
-                  trailing: Icon(Icons.add_circle_outline),
+
+                  // subtitle: Text("اهلا وسهلا بكم"),
+                  // trailing: Icon(Icons.add_circle_outline),
                 ),
+                Divider(color: Colors.red, height: 3),
                 ListTile(
                   title: Text("الاقسام"),
-                  leading: Icon(Icons.home),
+                  leading: Icon(
+                    Icons.departure_board,
+                    color: Colors.blue,
+                    size: 20,
+                  ),
+                  onLongPress: () {
+                    print("long press");
+                  },
+                  onTap: () {
+                    print("ontap");
+                  },
+                ),
+                ListTile(
+                  title: Text("حول التطبيق"),
+                  leading: Icon(
+                    Icons.home,
+                    color: Colors.black,
+                    size: 20,
+                  ),
+                  onLongPress: () {
+                    print("long press");
+                  },
+                  onTap: () {
+                    print("ontap");
+                  },
+                ),
+                ListTile(
+                  title: Text("الاعدادات"),
+                  leading: Icon(
+                    Icons.settings,
+                    color: Colors.red,
+                    size: 20,
+                  ),
+                  onLongPress: () {
+                    print("long press");
+                  },
+                  onTap: () {
+                    print("ontap");
+                  },
+                ),
+                ListTile(
+                  title: Text("تسجيل خروج"),
+                  leading: Icon(
+                    Icons.logout,
+                    color: Colors.pink,
+                    size: 20,
+                  ),
+                  onLongPress: () {
+                    print("long press");
+                  },
+                  onTap: () {
+                    print("ontap");
+                  },
                 )
               ],
             )),
